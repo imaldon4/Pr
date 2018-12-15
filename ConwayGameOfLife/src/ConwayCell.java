@@ -1,6 +1,18 @@
-
+/**
+ * This class extends the AbstractCell abstract superclass.
+ * @author Ike Maldonado
+ * @version 12/14/18
+ *
+ */
 public class ConwayCell extends AbstractCell {
 
+	/**
+	 * Constructor. It sends the values for the rows
+	 * columns and ConwayWorld object.
+	 * @param r
+	 * @param c
+	 * @param w
+	 */
 	public ConwayCell(int r, int c, ConwayWorld w) {
 		super(r, c, w);
 	}	

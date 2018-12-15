@@ -8,7 +8,7 @@ public class ConwayMain {
 		
 		ConwayWorld world = new ConwayWorld();
 		
-		// Add some live conway cells, in a horizontal line		
+		// Add some live Conway cells, in a horizontal line		
 		for (int i = 0; i < 8; i++) {
 			ConwayCell c = new ConwayCell(5, 5 + i, world);
 			c.setIsAlive(true);

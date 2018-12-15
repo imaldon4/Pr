@@ -3,7 +3,6 @@
  * ____ # of neighbors, they remain alive.
  * @author Ike Maldonado
  * @version 12/14/18
- *
  */
 public class AlwaysAliveCell extends AbstractCell {
 	
@@ -25,14 +24,24 @@ public class AlwaysAliveCell extends AbstractCell {
 		return this;
 	}
 	
+	/**
+	 * Why is this not Overridden? Notice that it will always
+	 * be true.
+	 */
 	public boolean willBeAliveInNextGeneration() {
 		return true;
 	}
 	
+	/**
+	 * Will always return true.
+	 */
 	public boolean getIsAlive() {
 		return true;
 	}
 	
+	/**
+	 * This returns the character '+' when requested.
+	 */
 	public char displayCharacter() {
 		return '+';
 	}

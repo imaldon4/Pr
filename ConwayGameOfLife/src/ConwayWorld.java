@@ -1,4 +1,8 @@
-
+/**
+ * This class does NOT inherit from any other class. 
+ * @author imald
+ *
+ */
 public class ConwayWorld {
 	
 	static final int ROWS = 20;
