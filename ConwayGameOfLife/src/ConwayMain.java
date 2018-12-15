@@ -15,7 +15,7 @@ public class ConwayMain {
 			world.replaceCell(c);
 		}
 		
-		// Add an always-alive cells
+		// Add an always-alive cells 
 		AbstractCell a = new AlwaysAliveCell(12, 12, world);
 		world.replaceCell(a);
 			

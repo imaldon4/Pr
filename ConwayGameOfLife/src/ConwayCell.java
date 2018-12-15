@@ -7,8 +7,9 @@
 public class ConwayCell extends AbstractCell {
 
 	/**
-	 * Constructor. It sends the values for the rows
-	 * columns and ConwayWorld object.
+	 * Constructor. It obtains the values from the ConwayWorld class
+	 * and fills out the values for r,c, and ConwayWorld object into
+	 * the holder values by creating AbstractCell objects. 
 	 * @param r
 	 * @param c
 	 * @param w
@@ -17,6 +18,11 @@ public class ConwayCell extends AbstractCell {
 		super(r, c, w);
 	}	
 
+	/**
+	 * Why no override statement?
+	 * 
+	 * This method 
+	 */
 	public boolean willBeAliveInNextGeneration() {
 		int nc = neighborCount();
 		
@@ -35,14 +41,28 @@ public class ConwayCell extends AbstractCell {
 		return next;
 	}
 	
+	/**
+	 * This method creates an efficient way of establishing the rules
+	 * behind the game by counting the number of neighbors next
+	 * to each cell.
+	 * @return Returns the number of neighbors on the cell.
+	 */
 	public int neighborCount() {
-		int count = 0;
+		int count = 0;	// Set counter to zero
 		
-		int row = getRow();
-		int column = getColumn();
+		int row = getRow(); // Retrieves the AbstractCell row integer.
+		int column = getColumn(); // Retireves the AbstractCell column integer.
 		
-		for (int dr = -1; dr <= 1; dr++) {
-			for (int dc = -1; dc <= 1; dc++) {
+		/*
+		 * What does dr stand for? Directly Reaching?
+		 */
+		for (int dr = -1; dr <= 1; dr++) { // Loops through -1 0 1
+			for (int dc = -1; dc <= 1; dc++) { // Loops through -1 0 1
+				
+				/*
+				 * Test statement: In the ConwayWorld object, if ConwayWorld object 
+				 * If the row number 5+-1, 5-1
+				 */
 				if (world.isAlive(row + dr, column + dc) && !(dr == 0 && dc == 0)) {
 					count++;
 				}
