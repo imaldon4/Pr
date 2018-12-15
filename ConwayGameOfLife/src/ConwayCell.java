@@ -35,9 +35,7 @@ public class ConwayCell extends AbstractCell {
 	
 	public AbstractCell cellForNextGeneration() {
 		ConwayCell next = new ConwayCell(getRow(), getColumn(), world);
-		
 		next.setIsAlive(willBeAliveInNextGeneration());
-		
 		return next;
 	}
 	

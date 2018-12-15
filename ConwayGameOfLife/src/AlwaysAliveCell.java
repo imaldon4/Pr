@@ -43,6 +43,6 @@ public class AlwaysAliveCell extends AbstractCell {
 	 * This returns the character '+' when requested.
 	 */
 	public char displayCharacter() {
-		return '+';
+		return '■';
 	}
 }
