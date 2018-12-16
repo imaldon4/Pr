@@ -10,7 +10,6 @@ public class ConwayWorld {
 	static final int ROWS = 20;
 	static final int COLS = 20;
 	private int counter;
-	
 	private AbstractCell[][] grid = new AbstractCell[ROWS][COLS]; 
 
 	public ConwayWorld() {
@@ -62,7 +61,6 @@ public class ConwayWorld {
 	public boolean isAlive(int r, int c) {
 		return r >= 0 && c >= 0 && r < ROWS && c < COLS && grid[r][c].getIsAlive();
 	}
-	
 	
 	
 	/**
